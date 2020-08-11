@@ -3,6 +3,7 @@
     <h1>{{ guitar.make }}</h1>
     <h2>{{ guitar.model }}</h2>
     <img v-bind:src=guitar.image_url style="width:600px;">
+    <p><a v-bind:href="`/guitars/${guitar.id}/edit`">Update</a></p>
   </div>
 </template>
 

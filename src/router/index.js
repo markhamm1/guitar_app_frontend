@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import GuitarIndex from '../views/GuitarIndex.vue'
 import GuitarShow from '../views/GuitarShow.vue'
+import GuitarCreate from '../views/GuitarCreate.vue'
+import GuitarUpdate from '../views/GuitarUpdate.vue'
 
 
 Vue.use(VueRouter)
@@ -27,9 +29,19 @@ const routes = [
     component: GuitarIndex
   },
   {
+    path: '/guitars/new',
+    name: 'GuitarCreate',
+    component: GuitarCreate
+  },
+  {
     path: '/guitars/:id',
     name: 'GuitarShow',
     component: GuitarShow
+  },
+  {
+    path: '/guitars/:id/edit',
+    name: 'GuitarUpdate',
+    component: GuitarUpdate
   },
 ]
 

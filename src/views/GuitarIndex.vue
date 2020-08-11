@@ -31,7 +31,6 @@ export default {
   },
   methods: {
     guitarIndex: function () {
-      console.log("all the guitars");
       axios.get("api/guitars").then((response) => {
         console.log(response.data);
         this.guitars = response.data;
